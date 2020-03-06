@@ -8,6 +8,7 @@ echo "    User vagrant" >> .ssh/config
 echo "    Hostname 192.168.50.11" >> .ssh/config
 chmod 600 .ssh/config
 chown vagrant .ssh/config
+chmod 600 .ssh/id_rsa
 echo "eval \`ssh-agent\`" >> .bashrc
 echo "ssh-add ~/.ssh/id_rsa" >> .bashrc
 SCRIPT
